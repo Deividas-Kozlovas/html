@@ -20,3 +20,7 @@ img{
     display: flex;
     flex-direction: column;
 }
+
+.box{
+    background-color: red;
+}
