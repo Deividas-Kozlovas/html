@@ -1,0 +1,22 @@
+.text, h1, ul li{
+    text-align: center;
+}
+
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 700;
+}
+
+article{
+    padding: 50px;
+}
+
+img{
+    width: 600px;
+}
+
+.footer-box, ul li{
+    display: flex;
+    flex-direction: column;
+}
