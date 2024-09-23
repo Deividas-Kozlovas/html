@@ -1,0 +1,38 @@
+section div{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+section div h1,
+section div h2, 
+section div h3, 
+section div h4, 
+section div h5  {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+
+section div:nth-child(1){
+    background-color: black;
+}
+
+section div:nth-child(2){
+    background-color: blue;
+}
+
+section div:nth-child(3){
+    background-color: red;
+}
+
+section div:nth-child(4){
+    background-color: green;
+}
+
+section div:nth-child(5){
+    background-color: beige;
+}

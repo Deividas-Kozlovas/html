@@ -24,3 +24,11 @@ img{
 .box{
     background-color: red;
 }
+
+.change-collor a:nth-child(odd){
+    color: red;
+}
+
+.change-collor a:nth-child(even){
+    color: green;
+}
