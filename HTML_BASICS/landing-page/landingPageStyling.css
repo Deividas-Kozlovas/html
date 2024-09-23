@@ -2,7 +2,7 @@
     position: relative;
 }
 
-.text{
+.container__text{
     position: absolute;
     background-color: white;
     width: 500px;
@@ -12,25 +12,36 @@
     text-align: center;
 }
 
-.text button{
+.container__text button{
     display: block;
     margin: 0 auto;
 }
 
-.text-images{
+.container__images{
     position: absolute;
     top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     
 }
-
-.text-images img {
+.container__images img,
+.container__text-image img {
     width: 100px;
     border-radius: 50%;
 }
 
-.test{
-    height: 200px;
-    background-color: red;
+.container__text-image a:nth-child(1) img{
+    position: absolute;
+    left: 20px;
+    bottom: -50px;
+}
+.container__text-image a:nth-child(2) img{
+    position: absolute;
+    top: -80px;
+    left: 20px;
+}
+.container__text-image a:nth-child(3) img{
+    position: absolute;
+    top: -50px;
+    right: -40px;
 }
