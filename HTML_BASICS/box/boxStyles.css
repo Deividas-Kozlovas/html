@@ -4,17 +4,8 @@ section div{
     width: 200px;
     display: block;
     margin: 0 auto;
-    position: relative;
-}
-
-section div h1,
-section div h2, 
-section div h3, 
-section div h4, 
-section div h5  {
-    position: absolute;
-    top: 30%;
-    left: 45%;
+    line-height: 200px;  
+    text-align: center;     
 }
 
 section div:nth-child(1){

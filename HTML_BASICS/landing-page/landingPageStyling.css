@@ -1,0 +1,36 @@
+.container{
+    position: relative;
+}
+
+.text{
+    position: absolute;
+    background-color: white;
+    width: 500px;
+    top: 30%;
+    left: 10%;
+    padding: 20px;
+    text-align: center;
+}
+
+.text button{
+    display: block;
+    margin: 0 auto;
+}
+
+.text-images{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.text-images img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.test{
+    height: 200px;
+    background-color: red;
+}

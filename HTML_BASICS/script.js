@@ -1,6 +1,5 @@
 const link = document.querySelector('#link');
 const colors = document.querySelectorAll('.change-collor');
-const 
 const test = document.querySelectorAll('#test');
 
 link.addEventListener('click', () => {
@@ -12,7 +11,7 @@ link.addEventListener('click', () => {
 
     console.log(test);
     test.forEach(tst => {
-        console.log(tst);
+        console.log(tst.style.color);
         tst.style.color = "red";
     });
 
