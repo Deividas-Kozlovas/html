@@ -1,29 +1,23 @@
 const link = document.querySelector('#link');
-const colors = document.querySelectorAll('.change-collor');
-const test = document.querySelectorAll('#test');
+const colors = document.querySelectorAll('.change-collor a'); 
+const test = document.querySelectorAll('#test a'); 
 
-link.addEventListener('click', () => {
-    console.log(colors);
-    colors.forEach((color) => {
-        console.log(color);
-        color.style.color = "blue";
-    });
+        let isRed = false;
 
-    console.log(test);
-    test.forEach(tst => {
-        console.log(tst.style.color);
-        tst.style.color = "red";
-    });
-
-    // colors.forEach(function(color){
-    //     console.log(color.getAttribute('a'));
-    //      color.style.color = "red";
-    // })
-
-    // for (let i in colors){
-    //     console.log[colors[i]];
-    //     let li = colors[i];
-    //     li.style.color = "red";
-    // }
-})
-
+        link.addEventListener('click', () => {
+            colors.forEach((link, index) => {
+                if (isRed) {
+                    if (index % 2 === 0) {
+                        link.style.color = 'green'; 
+                        link.style.color = 'red';  
+                    }
+                } else {
+                    if (index % 2 === 0) {
+                        link.style.color = 'red';   
+                    } else {
+                        link.style.color = 'green';
+                    }
+                }
+            });
+            isRed = !isRed;
+        });
