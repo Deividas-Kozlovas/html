@@ -28,6 +28,7 @@ header{
 
 main{
     display: flex;
+    position: relative;
 }
 
 main article {
@@ -94,11 +95,11 @@ main .carousel img{
     background-color: white;
     height: 20px;
     width: 20px;
-    top: 38%;
-    left: 93%;
+    top: 35%;
+    left: 96%;
     padding: 15px;
     border-radius: 10px;
     -webkit-box-shadow: 10px 10px 21px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 21px -6px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 21px -6px rgba(0,0,0,0.75);
-} 
+}
