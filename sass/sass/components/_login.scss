@@ -1,0 +1,50 @@
+@import "mixins/display";
+
+.login{
+    width: 22%;
+    background-color: #fff;
+    margin-top: 100px;
+    padding: 30px 50px;
+    border-radius: 10px;
+    
+    h1,
+    p{
+        text-align: center;
+    }
+
+    h1{
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+
+    p{
+        margin-top: 60px;
+        font-size: $main-text-zise;
+    }
+
+    &-social{
+        @include align-center;
+        a{
+            margin-top: 10px;
+    
+            img{            
+                height: 45px;
+                width: 45px;
+                margin: 5px;
+            }
+        }
+    }
+
+    &-end{
+        p{
+            padding-top: 90px;
+        }
+    
+        a{
+            @include align-center;
+            text-decoration: none;
+            color: black;
+            font-size: $main-text-zise;
+        }
+    }   
+}

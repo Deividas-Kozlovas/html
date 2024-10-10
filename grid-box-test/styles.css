@@ -30,11 +30,12 @@
 }
 
 header nav{
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 header nav .logo{
-    height: 50px;
+    height: 40px;
+    padding-top: 15px;
 }
 
 header nav ul{
