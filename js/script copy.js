@@ -1,15 +1,22 @@
-let numberOfPeople = prompt("Kiek bus sveciu?");
-numberOfPeople = parseInt(numberOfPeople);
 
-const blackList = ["Jonas", "Tomas"];
+let numberOfPeople = addNumberGuests("Kiek bus sveciu?");
+
+function addNumberGuests(text){
+    let guests = prompt(text);
+    if(isNaN(guests)){
+        return addNumberGuests("Turi buti sakicius!!!");
+    } 
+    return guests;   
+}
+
+let blackList = ["Jonas", "Tomas"];
 
 let names = [];
 
 addGuests(numberOfPeople, names);
 names = makeArrayToLoweCase(names);
-makeArrayToLoweCase(blackList);
+blackList = makeArrayToLoweCase(blackList);
 
-console.log(names);
 
 printGuests(names, blackList);
 
@@ -36,9 +43,9 @@ function makeArrayToLoweCase(arrayString){
 
 function checkIfBlacklisted(name, blackList) {
   if (blackList.includes(name)) {
-    console.log(name + " (blacklist)");
+    console.log(name.charAt(0).toUpperCase() + name.slice(1) + " (blacklist)");
   } else {
-    console.log(name);
+    console.log(name.charAt(0).toUpperCase() + name.slice(1));
   }
 }
 
